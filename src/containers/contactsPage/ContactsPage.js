@@ -1,4 +1,6 @@
 import React, { useState, useEffect } from "react";
+import { ContactForm } from "./../../components/contactForm/ContactForm";
+import {TileList} from "./../../components/tileList/TileList"
 
 export const ContactsPage = (props) => {
   /*
@@ -18,8 +20,11 @@ export const ContactsPage = (props) => {
     if the contact name is not a duplicate
     */
     if (!duplicateName) {
-      props.addContact(e.target.name, e.target.phone, e.target.email)
+      props.addContact(e.target.name, e.target.phone, e.target.email);
     }
+    setName("");
+    setPhone("");
+    setEmail("");
   };
 
   /*
@@ -28,9 +33,9 @@ export const ContactsPage = (props) => {
   */
 
   useEffect(() => {
-    const matches = props.contacts.filter((contact) => contact.name === name)
+    const matches = props.contacts.filter((contact) => contact.name === name);
     if (matches.length > 0) {
-      setDuplicateName(true)
+      setDuplicateName(true);
     }
   }, [name]);
 
@@ -38,10 +43,22 @@ export const ContactsPage = (props) => {
     <div>
       <section>
         <h2>Add Contact</h2>
+        <ContactForm
+          name={name}
+          setName={setName}
+          phone={phone}
+          setPnone={setPhone}
+          email={email}
+          setEmail={setEmail}
+          duplicateName={duplicateName}
+          setDuplicateName={setDuplicateName}
+          handleSubmit={handleSubmit}
+        />
       </section>
       <hr />
       <section>
         <h2>Contacts</h2>
+        <TileList contacts={props.contacts} />
       </section>
     </div>
   );
