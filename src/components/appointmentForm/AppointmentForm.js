@@ -20,6 +20,8 @@ export const AppointmentForm = ({
     return `${year}-${month.padStart(2, "0")}-${day.padStart(2, "0")}`;
   };
 
+  const getContactNames = () => contacts.map((contact) => contact.name)
+
   return (
     <form onSubmit={handleSubmit}>
       <label>
@@ -36,9 +38,9 @@ export const AppointmentForm = ({
         Time:
         <input type='time' name='time' value={time} onChange={(e) => setTime(e.target.value)}></input>
       </label>
-
-      <ContactPicker contacts={contacts}/>
-
+     
+      <ContactPicker contacts={getContactNames()} name='contact' value={contact} onChange={(e) => setContact(e.target.value)} />
+      
       <input type="submit"></input>
     </form>
   );
