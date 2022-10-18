@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { ContactForm } from "./../../components/contactForm/ContactForm";
-import {TileList} from "./../../components/tileList/TileList"
+import { TileList } from "./../../components/tileList/TileList";
 
 export const ContactsPage = (props) => {
   /*
@@ -13,6 +13,20 @@ export const ContactsPage = (props) => {
   const [email, setEmail] = useState("");
   const [duplicateName, setDuplicateName] = useState(false);
 
+   /*
+  Using hooks, check for contact name in the 
+  contacts array variable in props
+  */
+
+
+  useEffect(() => {
+    if (props.contacts.filter((contact) => contact.name === name).length > 0) {
+      setDuplicateName(true);
+    } else {
+      setDuplicateName(false)
+    }
+  }, [name]);
+
   const handleSubmit = (e) => {
     e.preventDefault();
     /*
@@ -20,25 +34,19 @@ export const ContactsPage = (props) => {
     if the contact name is not a duplicate
     */
     if (!duplicateName) {
-      props.addContact(e.target.name, e.target.phone, e.target.email);
+      props.addContact(name, phone, email);
+      setName("");
+      setPhone("");
+      setEmail("");
+      setDuplicateName(false);
+    } else {
+      alert("Duplicate contact found for that name");
+      setName("");
+      setDuplicateName(false);
     }
-    setName("");
-    setPhone("");
-    setEmail("");
   };
 
-  /*
-  Using hooks, check for contact name in the 
-  contacts array variable in props
-  */
-
-  useEffect(() => {
-    const matches = props.contacts.filter((contact) => contact.name === name);
-    if (matches.length > 0) {
-      setDuplicateName(true);
-    }
-  }, [name]);
-
+ 
   return (
     <div>
       <section>
@@ -47,7 +55,7 @@ export const ContactsPage = (props) => {
           name={name}
           setName={setName}
           phone={phone}
-          setPnone={setPhone}
+          setPhone={setPhone}
           email={email}
           setEmail={setEmail}
           duplicateName={duplicateName}
