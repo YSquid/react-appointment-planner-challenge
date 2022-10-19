@@ -13,17 +13,16 @@ export const ContactsPage = (props) => {
   const [email, setEmail] = useState("");
   const [duplicateName, setDuplicateName] = useState(false);
 
-   /*
+  /*
   Using hooks, check for contact name in the 
   contacts array variable in props
   */
-
 
   useEffect(() => {
     if (props.contacts.filter((contact) => contact.name === name).length > 0) {
       setDuplicateName(true);
     } else {
-      setDuplicateName(false)
+      setDuplicateName(false);
     }
   }, [name]);
 
@@ -46,7 +45,6 @@ export const ContactsPage = (props) => {
     }
   };
 
- 
   return (
     <div>
       <section>
