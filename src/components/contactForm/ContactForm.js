@@ -1,4 +1,5 @@
 import React from "react";
+import './ContactForm.css'
 
 export const ContactForm = ({
   name,
@@ -42,10 +43,7 @@ export const ContactForm = ({
         ></input>
       </label>
 
-      <label>
-        Submit:
-        <input type="submit"></input>
-      </label>
+        <input type="submit" id="submitBtn"></input>
     </form>
   );
 };

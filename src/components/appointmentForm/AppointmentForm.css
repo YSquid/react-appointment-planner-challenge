@@ -1,0 +1,7 @@
+#submitBtn {
+    background-color: var(--french-blue)
+}
+
+#submitBtn:hover {
+    background-color: var(--red-crayola);
+}

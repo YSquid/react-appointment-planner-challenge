@@ -24,7 +24,7 @@ export const ContactsPage = (props) => {
     } else {
       setDuplicateName(false);
     }
-  }, [name]);
+  }, [name, props.contacts]);
 
   const handleSubmit = (e) => {
     e.preventDefault();
