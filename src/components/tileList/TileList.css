@@ -1,0 +1,4 @@
+.tile-list {
+    display: flex;
+    list-style: none;
+}

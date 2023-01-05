@@ -1,4 +1,5 @@
 import React from "react";
+import "./Tile.css"
 
 export const Tile = (props) => {
   const values = Object.values(props.object);
@@ -6,11 +7,11 @@ export const Tile = (props) => {
     <div className="tile-container">
       {values.map((value, index) =>
         index === 0 ? (
-          <p className="tile-title" key={index}>
+          <h3 className="tile-title" key={index}>
             {value}
-          </p>
+          </h3>
         ) : (
-          <p className="tile" key={index}>
+          <p className="tile-value" key={index}>
             {value}
           </p>
         )
