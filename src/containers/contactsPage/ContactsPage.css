@@ -1,6 +1,7 @@
 .Contacts__page {
-    width: 100vw;
-    height: 90vh;
+    width: 100%;
+    height: fit-content;
+    box-sizing: border-box;
 }
 
 .Contact__form {

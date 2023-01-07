@@ -26,7 +26,7 @@ function App() {
     {title: 'Sam renewal', contact: 'Sam', date: '2023-02-14', time: '1:00pm'}
   ]
 
-  const [contacts, setContacts] = useState(testContacts);
+  const [contacts, setContacts] = useState([]);
   const [appointments, setAppointments] = useState(testAppointments);
 
   const ROUTES = {
