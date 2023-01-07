@@ -1,0 +1,14 @@
+.Contacts__form {
+    width: 100vw;
+    background-color: red;;
+}
+
+.Contacts__form section {
+    width: 100vw;
+    background-color: blue;
+}
+
+.Contacts__form form {
+    width: 100vw;
+    background-color: orange;
+}

@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from "react";
+import './ContactsPage.css'
 import { ContactForm } from "./../../components/contactForm/ContactForm";
 import { TileList } from "./../../components/tileList/TileList";
 
@@ -46,7 +47,7 @@ export const ContactsPage = (props) => {
   };
 
   return (
-    <div>
+    <div className="Contacts__form">
       <section>
         <h2>Add Contact</h2>
         <ContactForm

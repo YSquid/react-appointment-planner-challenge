@@ -11,6 +11,7 @@ function App() {
   contacts and appointments 
   */
 
+  /*Testing contact and appoinment data - release with empty useState initializations */
   const testContacts = [
     { name: "Ahmad", phone: "306-153-7498", email: "ahmad1008@gmail.com" },
     { name: "Sam", phone: "306-401-7981", email: "sam123@gmail.com" },
@@ -50,7 +51,7 @@ function App() {
   };
 
   return (
-    <>
+    <div className="App">
       <nav>
         <NavLink
           to={ROUTES.CONTACTS}
@@ -86,7 +87,7 @@ function App() {
           </Route>
         </Switch>
       </main>
-    </>
+    </div>
   );
 }
 

@@ -1,8 +1,12 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
 :root {
     --columbia-blue: #C9F0FF;
     --french-blue: #2374AB;
-    --deep-blue: #000000;
-    --black-coffee: #34252F;
+    --green-cyan: #009B72;
     --red-crayola: #ED254E;
-    --sunray: #E4B363;
 }
