@@ -47,8 +47,8 @@ export const ContactsPage = (props) => {
   };
 
   return (
-    <div className="Contacts__form">
-      <section>
+    <div className="Contacts__page">
+      <section className="Contact__form">
         <h2>Add Contact</h2>
         <ContactForm
           name={name}
@@ -63,7 +63,7 @@ export const ContactsPage = (props) => {
         />
       </section>
       <hr />
-      <section>
+      <section className="Contact__list">
         <h2>Contacts</h2>
         <TileList data={props.contacts} />
       </section>

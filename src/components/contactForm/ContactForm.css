@@ -5,3 +5,15 @@
 #submitBtn:hover {
     background-color: var(--red-crayola);
 }
+
+input,
+select {
+  background: #ffffff;
+  border: 1px solid #979797;
+  border-radius: 4px;
+  padding: 7px 9.5px 9px 9.5px;
+  outline: none;
+  width: 100%;
+  margin-bottom: 10px;
+  box-sizing: border-box;
+}

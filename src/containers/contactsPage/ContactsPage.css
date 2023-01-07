@@ -1,14 +1,9 @@
-.Contacts__form {
+.Contacts__page {
     width: 100vw;
-    background-color: red;;
+    height: 90vh;
 }
 
-.Contacts__form section {
-    width: 100vw;
-    background-color: blue;
+.Contact__form {
+    height: fit-content
 }
 
-.Contacts__form form {
-    width: 100vw;
-    background-color: orange;
-}
