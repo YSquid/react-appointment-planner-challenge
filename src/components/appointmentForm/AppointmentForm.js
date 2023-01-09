@@ -32,6 +32,7 @@ export const AppointmentForm = ({
           name="title"
           value={title}
           onChange={(e) => setTitle(e.target.value)}
+          required
         ></input>
       </label>
 
@@ -43,6 +44,7 @@ export const AppointmentForm = ({
           min={getTodayString()}
           value={date}
           onChange={(e) => setDate(e.target.value)}
+          required
         ></input>
       </label>
 
@@ -53,6 +55,7 @@ export const AppointmentForm = ({
           name="time"
           value={time}
           onChange={(e) => setTime(e.target.value)}
+          required
         ></input>
       </label>
 
