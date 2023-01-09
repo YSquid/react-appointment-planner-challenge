@@ -39,6 +39,7 @@ nav h2 {
     padding: 1rem;
     background-color: var(--french-blue);
     border-radius: 2rem;
+    margin: 0.5rem;
 }
 
 nav a:link {
