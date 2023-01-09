@@ -1,4 +1,7 @@
 .tile-list {
     display: flex;
-    list-style: none;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 100%;
 }

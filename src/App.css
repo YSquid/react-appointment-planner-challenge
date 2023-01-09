@@ -6,6 +6,10 @@
     height: 100%;
     width: 100%;
     box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 nav {
@@ -13,6 +17,8 @@ nav {
     height: fit-content;
     padding: 1rem;
     margin: 1rem 1rem 1rem 0;
+    width: fit-content;
+    flex-wrap: wrap;
 }
 
 nav a {

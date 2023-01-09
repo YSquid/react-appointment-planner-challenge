@@ -1,11 +1,20 @@
 .Contacts__page {
     width: 100%;
-    height: fit-content;
+    min-height: fit-content;
     box-sizing: border-box;
     padding: 1rem;
 }
 
 .Contact__form {
-    height: fit-content
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
+.Contact__list {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}

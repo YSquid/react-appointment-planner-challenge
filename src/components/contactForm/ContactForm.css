@@ -6,6 +6,10 @@
     background-color: var(--red-crayola);
 }
 
+form {
+  width: 100%;
+}
+
 input,
 select {
   background: #ffffff;
