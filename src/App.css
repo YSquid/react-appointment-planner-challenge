@@ -2,6 +2,7 @@
     background-color: var(--columbia-blue);
 }
 
+
 .App {
     height: 100%;
     width: 100%;
@@ -10,6 +11,12 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+}
+
+header {
+    display: flex;
+    justify-content: center;
+    width: 100%;
 }
 
 nav {
@@ -21,9 +28,17 @@ nav {
     flex-wrap: wrap;
 }
 
+
 nav a {
     margin: 0 1rem;
     text-decoration: none;
+}
+
+nav h2 {
+    outline: 1px solid var(--light-grey);
+    padding: 1rem;
+    background-color: var(--french-blue);
+    border-radius: 2rem;
 }
 
 nav a:link {
@@ -39,12 +54,15 @@ nav a:hover {
 }
 
 .navLink.active {
-    color: var(--red-crayola);
+    color: white;
 }
+
 
 main {
     box-sizing: border-box;
     width: 100vw;
+    border-top: 1px solid var(--light-grey);
+    border-bottom: 1px solid var(--light-grey);
 }
 
 form {

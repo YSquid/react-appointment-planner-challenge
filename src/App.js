@@ -52,6 +52,7 @@ function App() {
 
   return (
     <div className="App">
+      <header>
       <nav>
         <NavLink
           to={ROUTES.CONTACTS}
@@ -68,6 +69,7 @@ function App() {
           <h2>Appointments</h2>
         </NavLink>
       </nav>
+      </header>
       <main>
         <Switch>
           <Route exact path="/">
