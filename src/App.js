@@ -16,7 +16,7 @@ function App() {
     { name: "Ahmad", phone: "306-153-7498", email: "ahmad1008@gmail.com" },
     { name: "Sam", phone: "306-401-7981", email: "sam123@gmail.com" },
     { name: "Emma Sampson", phone: "306-897-0549", email: "emmasews20@gmail.com" },
-    { name: "Equid", phone: "306-178-0058", email: "taxpros20@gmail.com" }
+    { name: "Eluid", phone: "306-178-0058", email: "taxpros20@gmail.com" }
   ];
 
   const testAppointments = [
@@ -26,7 +26,7 @@ function App() {
     {title: 'Sam renewal', contact: 'Sam', date: '2023-02-14', time: '1:00pm'}
   ]
 
-  const [contacts, setContacts] = useState([]);
+  const [contacts, setContacts] = useState(testContacts);
   const [appointments, setAppointments] = useState(testAppointments);
 
   const ROUTES = {

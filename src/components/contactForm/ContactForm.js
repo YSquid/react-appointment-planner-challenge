@@ -11,7 +11,7 @@ export const ContactForm = ({
   handleSubmit,
 }) => {
   return (
-    <form onSubmit={handleSubmit}>
+    <form onSubmit={handleSubmit} className>
       <label>
         Name:
         <input
