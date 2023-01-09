@@ -1,9 +1,8 @@
 #root {
-  padding: 30px;
   font-family: "Open Sans", sans-serif;
 }
 
-nav > a {
+/* nav > a {
   font-style: normal;
   font-weight: normal;
   font-size: 14px;
@@ -79,4 +78,4 @@ select {
 
 .tile-container {
   margin-bottom: 20px;
-}
+} */

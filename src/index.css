@@ -1,0 +1,13 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+:root {
+    --columbia-blue: #C9F0FF;
+    --french-blue: #2374AB;
+    --green-cyan: #009B72;
+    --red-crayola: #ED254E;
+    --light-grey: #979797;
+}

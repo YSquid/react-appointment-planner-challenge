@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from "react";
+import './ContactsPage.css'
 import { ContactForm } from "./../../components/contactForm/ContactForm";
 import { TileList } from "./../../components/tileList/TileList";
 
@@ -24,7 +25,7 @@ export const ContactsPage = (props) => {
     } else {
       setDuplicateName(false);
     }
-  }, [name]);
+  }, [name, props.contacts]);
 
   const handleSubmit = (e) => {
     e.preventDefault();
@@ -46,8 +47,8 @@ export const ContactsPage = (props) => {
   };
 
   return (
-    <div>
-      <section>
+    <div className="Contacts__page">
+      <section className="Contact__form">
         <h2>Add Contact</h2>
         <ContactForm
           name={name}
@@ -62,7 +63,7 @@ export const ContactsPage = (props) => {
         />
       </section>
       <hr />
-      <section>
+      <section className="Contact__list">
         <h2>Contacts</h2>
         <TileList data={props.contacts} />
       </section>

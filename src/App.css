@@ -1,0 +1,83 @@
+* {
+    background-color: var(--columbia-blue);
+}
+
+
+.App {
+    height: 100%;
+    width: 100%;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+header {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+nav {
+    display: flex;
+    height: fit-content;
+    padding: 1rem;
+    margin: 1rem 1rem 1rem 0;
+    width: fit-content;
+    flex-wrap: wrap;
+}
+
+
+nav a {
+    margin: 0 1rem;
+    text-decoration: none;
+}
+
+nav h2 {
+    outline: 1px solid var(--light-grey);
+    padding: 1rem;
+    background-color: var(--french-blue);
+    border-radius: 2rem;
+    margin: 0.5rem;
+}
+
+nav a:link {
+    color: black;
+}
+
+nav a:visited {
+    color: black;
+}
+
+nav a:hover {
+    color: var(--red-crayola)
+}
+
+.navLink.active {
+    color: white;
+}
+
+
+main {
+    box-sizing: border-box;
+    width: 100vw;
+    border-top: 1px solid var(--light-grey);
+    border-bottom: 1px solid var(--light-grey);
+}
+
+form {
+    width: 100%;
+  }
+
+input,
+select {
+  background: #ffffff;
+  border: 1px solid #979797;
+  border-radius: 4px;
+  padding: 7px 9.5px 9px 9.5px;
+  outline: none;
+  width: 100%;
+  margin-bottom: 10px;
+  box-sizing: border-box;
+}
