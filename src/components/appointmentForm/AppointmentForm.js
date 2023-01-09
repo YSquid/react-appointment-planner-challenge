@@ -24,7 +24,7 @@ export const AppointmentForm = ({
   const getContactNames = () => contacts.map((contact) => contact.name);
 
   return (
-    <form onSubmit={handleSubmit} className="Appointment__form">
+    <form onSubmit={handleSubmit}>
       <label>
         Title:
         <input

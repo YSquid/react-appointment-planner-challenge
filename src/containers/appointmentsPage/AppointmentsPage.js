@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { AppointmentForm } from "./../../components/appointmentForm/AppointmentForm";
 import { TileList } from "./../../components/tileList/TileList";
+import './AppointmentsPage.css'
 
 export const AppointmentsPage = (props) => {
   /*
@@ -25,8 +26,8 @@ export const AppointmentsPage = (props) => {
   };
 
   return (
-    <div>
-      <section>
+    <div className="Appointments__page">
+      <section className="Appointment__form">
         <h2>Add Appointment</h2>
         <AppointmentForm
           title={title}
@@ -42,7 +43,7 @@ export const AppointmentsPage = (props) => {
         />
       </section>
       <hr />
-      <section>
+      <section className="Appointments__list">
         <h2>Appointments</h2>
         <TileList data={props.appointments} />
       </section>
