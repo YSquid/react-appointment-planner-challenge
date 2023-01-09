@@ -1,22 +1,25 @@
 .tile-container {
     display: flex;
     flex-direction: column;
-    width: 40%;
+    width: 30%;
     text-align: center;
     margin: 1rem;
     padding: 1rem;
     background-color: var(--green-cyan);
     color: white;
+    border-radius: 1rem;
 }
 
 .tile-title {
     background-color: var(--green-cyan);
     word-break: word;
+    margin-bottom: 0.5rem;
 }
 
 .tile-value {
     background-color: var(--green-cyan);
     word-break: break-all;
+    margin-bottom: 0.5rem;
 }
 
 
