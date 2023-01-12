@@ -6,7 +6,7 @@
 
 [[redirects]]
   from = "/appointments"
-  to = "/appointments"
+  to = "/"
   status = 301
   force = true
   
