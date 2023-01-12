@@ -79,9 +79,6 @@ function App() {
             {/* Add props to ContactsPage */}
             <ContactsPage contacts={contacts} addContact={addContact} />
           </Route>
-          <Route exact path="/appointments">
-            <Redirect to={ROUTES.APPOINTMENTS} />
-          </Route>
           <Route path={ROUTES.APPOINTMENTS}>
             {/* Add props to AppointmentsPage */}
             <AppointmentsPage
