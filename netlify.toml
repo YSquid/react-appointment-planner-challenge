@@ -3,10 +3,10 @@
   to = "/"
   status = 301
   force = true
-  
+
 [[redirects]]
   from = "/appointments"
-  to = "/"
+  to = "/appointments"
   status = 301
   force = true
   
