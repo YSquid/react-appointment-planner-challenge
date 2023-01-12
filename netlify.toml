@@ -3,4 +3,9 @@
   to = "/"
   status = 301
   force = true
+
+  from = "/appointments"
+  to = "/"
+  status = 301
+  force = true
   
