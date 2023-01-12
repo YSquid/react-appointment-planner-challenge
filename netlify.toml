@@ -3,7 +3,8 @@
   to = "/"
   status = 301
   force = true
-
+  
+[[redirects]]
   from = "/appointments"
   to = "/"
   status = 301
